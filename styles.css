@@ -1,0 +1,213 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color:#f0f4f8;
+    color: #333;
+    padding-top: 60px; /* Space for fixed header */
+    animation: fadeIn 1.5s ease-in-out; /* Body fade-in animation */
+  }
+  
+  /* Header Section */
+  header {
+    background: #166901;
+    color: #fff;
+    padding: 0 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideDown 1s ease-out;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    animation: zoomIn 1.2s ease-out;
+  }
+  
+  /* Navbar */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 25px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #f4a300; /* Golden hover color */
+    transform: scale(1.1);
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  #about, #projects, #contact {
+    background-color: #e6f0ff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Project Section */
+  .project {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background: #016901;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #016905;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #bf464c;
+    transform: scale(1.1); /* Subtle scaling on hover */
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  form label {
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #086901;
+  }
+  
+  form input, form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  form input:focus, form textarea:focus {
+    border-color: #086901;
+    outline: none;
+  }
+  
+  form button {
+    align-self: flex-start;
+    padding: 12px 20px;
+    background-color: #056901;
+    border-radius: 5px;
+  }
+  
+  form button:hover {
+    background-color: #bf464c;
+  }
+  
+  /* Robot Section Styling */
+  .robot-section {
+    background-color: #e6f0ff;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 50px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .robot-question {
+    font-size: 1.8rem;
+    color: #126901;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
